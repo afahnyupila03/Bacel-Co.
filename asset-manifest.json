@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/Bacel-Co./static/css/main.956f2f64.css",
-    "main.js": "/Bacel-Co./static/js/main.cd90a134.js",
-    "static/media/slick.svg": "/Bacel-Co./static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Bacel-Co./static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Bacel-Co./static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Bacel-Co./static/media/slick.295183786cd8a1389865.woff",
+    "main.js": "/Bacel-Co./static/js/main.5f1e0b7d.chunk.js",
+    "main.js.map": "/Bacel-Co./static/js/main.5f1e0b7d.chunk.js.map",
+    "runtime-main.js": "/Bacel-Co./static/js/runtime-main.cdea3cbb.js",
+    "runtime-main.js.map": "/Bacel-Co./static/js/runtime-main.cdea3cbb.js.map",
+    "static/css/2.8c0e6b67.chunk.css": "/Bacel-Co./static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.977d7fad.chunk.js": "/Bacel-Co./static/js/2.977d7fad.chunk.js",
+    "static/js/2.977d7fad.chunk.js.map": "/Bacel-Co./static/js/2.977d7fad.chunk.js.map",
     "index.html": "/Bacel-Co./index.html",
-    "main.956f2f64.css.map": "/Bacel-Co./static/css/main.956f2f64.css.map",
-    "main.cd90a134.js.map": "/Bacel-Co./static/js/main.cd90a134.js.map"
+    "static/css/2.8c0e6b67.chunk.css.map": "/Bacel-Co./static/css/2.8c0e6b67.chunk.css.map",
+    "static/js/2.977d7fad.chunk.js.LICENSE.txt": "/Bacel-Co./static/js/2.977d7fad.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/css/main.956f2f64.css",
-    "static/js/main.cd90a134.js"
+    "static/js/runtime-main.cdea3cbb.js",
+    "static/css/2.8c0e6b67.chunk.css",
+    "static/js/2.977d7fad.chunk.js",
+    "static/js/main.5f1e0b7d.chunk.js"
   ]
 }
