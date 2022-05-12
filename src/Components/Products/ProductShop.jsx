@@ -14,7 +14,7 @@ function CartUI(props) {
     }
 
     return(
-        <Card className='mb-5' style={{border: 'none', textAlign: 'center'}} onMouseOver={mouseOver} onMouseOut={mouseOut}>
+        <Card className='mb-5 roboto-bold' style={{border: 'none', textAlign: 'center'}} onMouseOver={mouseOver} onMouseOut={mouseOut}>
             {hover ? <Card.Img variant="top" src={props.img2} className='card-img' alt={props.alt} /> : <Card.Img variant="top" src={props.img} className='card-img' alt={props.alt} />}
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>

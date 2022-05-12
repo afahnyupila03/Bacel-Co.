@@ -18,7 +18,7 @@ const borderStyle = {
 
 function Join() {
     return(
-        <div className='container-fluid' style={myStyle}>
+        <div className='container-fluid inter' style={myStyle}>
             <div className='row'>
                 <form style={{marginTop: '8rem'}}>
                     <h5>Connect to Bacel &amp; Co.</h5>

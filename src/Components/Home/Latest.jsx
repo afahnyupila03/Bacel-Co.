@@ -12,9 +12,9 @@ function Latest() {
                     <Card className='mb-4' style={{border: 'none'}}>
                         <Card.Img variant="top" src={latestCard.img} alt={latestCard.alt} className='card-img' />
                         <Card.Body style={{textAlign: 'center'}}>
-                            <Card.Title><h3>{latestCard.title}</h3></Card.Title>
-                            <Card.Text>
-                                <p>By <a href='ecommerce/bacel/#'>{latestCard.writer}</a> / {latestCard.comment}</p>
+                            <Card.Title className='roboto-condensed'><h3>{latestCard.title}</h3></Card.Title>
+                            <Card.Text className='rubik'>
+                                <p>By <a href='ecommerce/bacel/#' style={{ color: 'green', textDecoration: 'none'}} >{latestCard.writer}</a> / {latestCard.comment}</p>
                                 <p>{latestCard.text}</p>
                             </Card.Text>
                         </Card.Body>

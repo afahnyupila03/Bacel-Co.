@@ -5,7 +5,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/3/7/3735201445-05.jpg?w=500&auto=format,compress',
         alt: 'lunch_bag',
         name: 'Swissgear 3735 Something Cooler Insulated Lunch Bag - Black',
-        price: ''
+        price: '7,000.00 FCFA'
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/5/2503205024-04.jpg?w=500&auto=format,compress',
         alt: 'triford_wallet',
         name: 'Swissgear Napa Leather Trifold Wallet - Black/Black',
-        price: ''
+        price: '3,000 FCFA'
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/5/2503202030-06.jpg?w=500&auto=format,compress',
         alt: 'bifold_wallet',
         name: 'Swissgear Napa Leather Passcase Bifold Wallet - Black/Black',
-        price: ''
+        price: '4,500.00 FCFA'
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/6/2671202692-03.jpg?w=500&auto=format,compress',
         alt: 'golf_cap',
         name: 'Swissgear Getaway Golf Cap - Black',
-        price: ''
+        price: '11,000.00 FCFA'
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/s/w/swissgear-2638-backpack-kiwi-petals-print-4_1.jpg?w=500&auto=format,compress',
         alt: 'kiwi_petals',
         name: 'Swissgear 2638 Kids Lunch Bag - Kiwi Petals Print',
-        price: ''
+        price: '12,000.00 FCFA'
     },
     {
         id: 6,
@@ -45,7 +45,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/8/1/8111202591-03.jpg?w=500&auto=format,compress',
         alt: 'face_mask',
         name: 'Swissgear Protective Face Mask - Black - Small/Medium',
-        price: ''
+        price: '1,000 FCFA'
     },
     {
         id: 7,
@@ -53,7 +53,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/6/2673202312-01.jpg?w=500&auto=format,compress',
         alt: 'tote_bag',
         name: 'Swissgear 2673 Packable Tote Bag - Black',
-        price: ''
+        price: '5,000.00 FCFA'
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/5/2503555027-06.jpg?w=500&auto=format,compress',
         alt: 'napa_leather',
         name: 'Swissgear Napa Leather Bifold Wallet - Brown',
-        price: ''
+        price: '2,000.00 FCFA'
     },
     {
         id: 9,
@@ -69,7 +69,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/3/9/3979201449-07.jpg?w=500&auto=format,compress',
         alt: 'insulated_lunch_bag',
         name: 'Swissgear 3979 Daily Survival Insulated Lunch Bag - Black',
-        price: ''
+        price: '7,000.00 FCFA'
     },
     {
         id: 10,
@@ -77,7 +77,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/s/o/softside-luggage-tag_1_2.jpg?w=500&auto=format,compress',
         alt: 'luagge_tag_set',
         name: 'Wenger Personalized Luggage Tag Set - Black/White',
-        price: ''
+        price: '4,000.00 FCFA'
     },
     {
         id: 11,
@@ -85,7 +85,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/w/j/wjc803bk_-3_1.jpg?w=500&auto=format,compress',
         alt: 'key_lock',
         name: 'Swissgear Cable Key Lock - Black',
-        price: ''
+        price: '1,500.00 FACFA'
     },
     {
         id: 12,
@@ -93,7 +93,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/6/2657424004-06.jpg?w=500&auto=format,compress',
         alt: 'travel_bag',
         name: 'Swissgear 2657 Vertical Travel Bag - Light Gray Heather',
-        price: ''
+        price: '15,000.00 FCFA'
     },
     {
         id: 13,
@@ -101,7 +101,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/w/j/wj6306gy-refl.jpg?w=500&auto=format,compress',
         alt: 'luggage_scale',
         name: 'Swissgear Luggage Scale - Silver',
-        price: ''
+        price: '20,000.00 FCFA'
     },
     {
         id: 14,
@@ -109,7 +109,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/s/w/swissgear-wj3172bk-worldwide-adaptor-plug-back_1.jpg?w=500&auto=format,compress',
         alt: 'adaptor_plug',
         name: 'Swissgear Worldwide Adaptor Plug',
-        price: ''
+        price: '3,500.00 FCFA'
     },
     {
         id: 15,
@@ -117,7 +117,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/6/0/601675-08.jpg?w=500&auto=format,compress',
         alt: 'padfolio_black',
         name: 'Wenger Proxy Zippered Laptop Presentation Padfolio - Black',
-        price: ''
+        price: '5,000.00 FCFA'
     },
     {
         id: 16,
@@ -125,7 +125,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/6/2697302515-05.jpg?w=500&auto=format,compress',
         alt: 'noir_satin',
         name: 'Swissgear 2697 Tablet-Tech Portfolio - Noir Satin',
-        price: ''
+        price: '4,000.00 FCFA'
     },
     {
         id: 17,
@@ -133,7 +133,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/2/6/2670202691-05_1.jpg?w=500&auto=format,compress',
         alt: 'OS_black_hat',
         name: 'Swissgear Getaway Beanie Hat - OS - Black',
-        price: ''
+        price: '4,000.00 FCFA'
     },
     {
         id: 18,
@@ -149,7 +149,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/1/0/10005202650-2_3.jpg?w=500&auto=format,compress',
         alt: 'joggers_black',
         name: 'Swissgear 1000 Joggers - Black',
-        price: ''
+        price: '10,000.00 FCFA'
     },
     {
         id: 20,
@@ -157,7 +157,7 @@ const PromotionProducts = [
         img2: 'https://swissgear.imgix.net/1/0/10002100611s-01_2.jpg?w=500&auto=format,compress',
         alt: 'polo_shirt',
         name: 'Swissgear 1000 Golf Polo Shirt - White',
-        price: ''
+        price: '5,000.00 FCFA'
     }
 ];
 

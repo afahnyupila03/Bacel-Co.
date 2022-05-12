@@ -19,39 +19,39 @@ function Message() {
                     email: prevValue.email,
                     telephone: prevValue.telephone,
                     comment: prevValue.comment
-                }
+                };
             } else if (name === 'email') {
                 return {
                     name: prevValue.name,
                     email: value,
                     telephone: prevValue.telephone,
                     comment: prevValue.comment
-                }
+                };
             } else if (name === 'telephone') {
                 return {
                     name: prevValue.name,
                     email: prevValue.email,
                     telephone: value,
                     comment: prevValue.comment
-                }
+                };
             } else if (name === 'comment') {
                 return {
                     name: prevValue.name,
                     email: prevValue.email,
                     telephone: prevValue.telephone,
                     comment: value
-                }
+                };
             }
         });
     }
 
     return(
         <Container className='mb-5'>
-            <Row className='mx-auto mb-6 px-auto'>
+            <Row className='mx-auto mb-6 px-auto rubik'>
                 {/* Form */}
-                <Col>
+                <Col style={{paddingTop: '2rem'}}>
                     <Form>
-                        <h3 style={{ fontWeight: 'bold' }}>SEND A MESSAGE...</h3>
+                        <h3 style={{ fontWeight: 'bold', paddingBottom: '2rem' }}>SEND A MESSAGE...</h3>
                         <p className='text-danger'> <span>*</span> Required Fields</p>
 
                         {/* Name */}
@@ -75,23 +75,23 @@ function Message() {
                         {/* Comment */}
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label><span className='text-danger'>*</span> Comment</Form.Label>
-                            <Form.Control type="text" name='comment' value={userInfor.comment} onChange={handleChange} style={{height: '10rem'}} />
+                            <Form.Control type="text" name='comment' spellCheck='true' value={userInfor.comment} onChange={handleChange} style={{ height: '10rem' }} />
                         </Form.Group>
 
                         {/* Button */}
-                        <Button variant="warning" type="submit" style={{width: '5rem'}}>
+                        <Button variant="warning" type="submit" style={{ width: '5rem' }}>
                             SEND
                         </Button>
                     </Form>
                 </Col>
 
                 {/* Quick Tip */}
-                <Col style={{ textAlign: 'center' }} className='my-5' >
+                <Col style={{ textAlign: 'center', paddingLeft: '2rem' }} className='my-5' >
                     <h2 className='text-danger' style={{ fontWeight: 'bold' }}>QUICK TIP</h2>
                     <h4 style={{ fontWeight: 'bold' }}>HOW TO CHECK YOUR ORDER STATUS</h4>
                     <p>
-                        To quickly get the status of your order 
-                        <a href='ecommere/bacel/#' className='text-danger'>click here</a> 
+                        To quickly get the status of your order
+                        <a href='ecommere/bacel/#' className='text-danger' style={{textDecoration: 'none'}} > click here </a> 
                         or use the Track My Order link 
                         in the footer. Next, enter your SWISSGEAR order ID# (the number found in your 
                         confirmation email), last name, and zip code. Then click the continue button to 
@@ -100,7 +100,7 @@ function Message() {
                     <h4 style={{ fontWeight: 'bold' }}>HOW TO RETURN YOUR ORDER</h4>
                     <p>
                         Returning a recently purchased item? No problem! Just visit 
-                        <a href='ecommerce/bacel/#' className='text-danger'>https://rma.swissgear.com</a>
+                        <a href='ecommerce/bacel/#' className='text-danger' style={{textDecoration: 'none'}} > https://rma.swissgear.com </a>
                         to get started with your return. We will ask a few simple questions 
                         to get a better idea of the issue and how to best process your return. 
                         Once approved you will be provided with a return label and packing instructions 

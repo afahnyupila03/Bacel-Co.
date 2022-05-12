@@ -14,14 +14,14 @@ function CardUI(props) {
     }
 
     return (
-        <Card onMouseOver={mouseOver} onMouseOut={mouseOut} className='mb-4' style={{ border: 'none' }} >
+        <Card onMouseOver={mouseOver} onMouseOut={mouseOut} className='mb-4 rubik' style={{ border: 'none' }} >
             {hover ? <Card.Img variant="top" src={props.img2} alt={props.alt} className='card-img' style={{ backgroundColor: 'gray ' }} /> : <Card.Img variant="top" src={props.img} alt={props.alt} className='card-img' />}
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Text>
                     {props.price}
                 </Card.Text>
-                <Button variant="warning">Add to Cart</Button>
+                <Button variant="warning" style={{color: '#2E2E2E'}}>Add to Cart</Button>
             </Card.Body>
         </Card>
     );

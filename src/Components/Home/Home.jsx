@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Featured, { Featured2 } from './Featured';
 import FeaturedProducts from './FeaturedProducts';
 import Join from './Join';
@@ -11,18 +11,24 @@ import WarrantyBar from './WarrantyBar';
 
 function Home() { 
 
-    
+    // Hover Effect
+    const [hover, setHover] = useState(false);
+    function mouseOver() {
+        setHover(true);
+    }
+    function mouseOut() {
+        setHover(false);
+    }
 
     return(
         <div>
-            <h1>Home</h1>
             <Banner />
             {/* Featured Categories */}
 
             {/* Featured Category 1 */}
             <Container>
-                <div>
-                    <h2 style={{ textAlign: 'left', marginTop: '8rem' }}>FEATURED CATEGORIES</h2>
+                <div className='roboto-condensed'>
+                    <h2 style={{ textAlign: 'left', marginTop: '4rem' }}>FEATURED CATEGORIES</h2>
                     <hr style={{ marginBottom: '1rem' }} />
                 </div>
 
@@ -39,7 +45,7 @@ function Home() {
 
             {/* Featured Products */}
             <Container>
-                <div style={{ marginBottom: '5rem', textAlign: 'left', marginTop: '8rem' }}>
+                <div className='roboto-condensed' style={{ marginBottom: '5rem', textAlign: 'left', marginTop: '8rem' }}>
                     <h2>FEATURED PRODUCTS</h2>
                     <hr style={{marignBottom: '2rem'}} />
                 </div>
@@ -51,15 +57,18 @@ function Home() {
 
             {/* Latest News */}
             <Container style={{ alignItems: 'center', marginTop: '8rem', marginBottom: '8rem'}}>
-                <div style={{marginBottom: '5rem'}}>
+                <div className='roboto-condensed' style={{marginBottom: '5rem'}}>
                     <h3 style={{ textAlign: 'left' }}>LATEST NEWS</h3>
                     <hr />
                 </div>
 
                 <Latest />
 
-                <Button variant='outline-dark' size='lg' type='button' className='m-auto align-self-center d-flex'>
-                    <a href='ecommerce/bacel/#' style={{ textAlign: 'center', textDecoration: 'none', color: 'black' }}>LOAD MORE POSTS</a>
+                <Button variant='outline-dark' size='lg' type='button' onMouseOver={mouseOver} onMouseOut={mouseOut} className='m-auto align-self-center d-flex rubik'>
+                    {hover ? <a href='ecommerce/bacel/#' style={{ textAlign: 'center', textDecoration: 'none', color: 'white' }}>LOAD MORE POSTS</a> 
+                        :
+                        <a href='ecommerce/bacel/#' style={{ textAlign: 'center', textDecoration: 'none', color: 'black' }}>LOAD MORE POSTS</a>
+                    }
                 </Button>
             </Container>
 
@@ -68,7 +77,7 @@ function Home() {
 
             {/* Latest Product */}
             <Container style={{ marginTop: '5rem' }}>
-                <h2 style={{ textAlign: 'left' }}>Latest Arrivals</h2>
+                <h2 className='roboto-condensed' style={{ textAlign: 'left' }}>Latest Arrivals</h2>
                 <hr style={{ marginTop: '1rem' }} />
                 <LatestP />
             </Container>

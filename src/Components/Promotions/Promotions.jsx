@@ -7,9 +7,9 @@ import PromotionCategory from './PromotionCategory';
 function Promotion() {
     return (
         <Container fluid>
-            <div style={{marginTop: '5rem', textAlign: 'center'}}>
+            <div className='roboto-bold' style={{marginTop: '5rem', textAlign: 'center'}}>
                 <h1>TRAVEL ACCESSORIES</h1>
-                <h3>TYPE, FEATURES & COLLECTIONS</h3>
+                <h4>TYPE, FEATURES & COLLECTIONS</h4>
             </div>
             <PromotionCategory />
             <PromotionItems />

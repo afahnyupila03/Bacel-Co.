@@ -14,8 +14,8 @@ const backgroundStyle = {
 
 function Shop() {
     return(
-        <div className='contianer-fluid' style={backgroundStyle}>
-            <div>
+        <div className='contianer-fluid roboto-bold' style={backgroundStyle}>
+            <div style={{paddingTop: '10rem'}}>
                 <h4>About the shop</h4>
                 <span>
                     <i class="fa fa-heart-o" aria-hidden="true"></i>

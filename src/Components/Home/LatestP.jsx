@@ -7,7 +7,6 @@ function LatestCardProducts(props) {
 
     // Hover Effect
     const [hover, setHover] = useState(false);
-
     function mouseOver() {
         setHover(true);
     }
@@ -15,18 +14,19 @@ function LatestCardProducts(props) {
         setHover(false)
     }
 
+
     return(
         <Card style={{ border: 'none', textAlign: 'center' }} className='mb-4' onMouseOver={mouseOver} onMouseOut={mouseOut}>
             {hover ? <Card.Img variant='top' className='card-img' src={props.img2} alt={props.alt} /> : <Card.Img variant='top' className='card-img' src={props.img} alt={props.alt} />}
             <Card.Body>
-                <Card.Title>{props.name}</Card.Title>
+                <Card.Title className='roboto-bold'>{props.name}</Card.Title>
                 <Card.Text>
-                    <p>{props.price}</p>
-                    <Button variant='outline-dark' className='btn-link' href='ecommerce/product/#' size='sm' style={{ fontWeight: 'bold', textDecoration: 'none', borderLeft: 'none', borderTop: 'none', borderBottom: 'none', borderRadius: '0' }}>
-                        {props.quickShop} <i class="fa fa-eye" aria-hidden="true" style={{ marginLeft: '.7rem' }}></i>
+                    <p className='rubik'>{props.price}</p>
+                    <Button variant='outline-dark' className='btn btn-link roboto-bold' href='ecommerce/product/#' size='sm' style={{ fontWeight: 'bold', textDecoration: 'none', borderLeft: 'none', borderTop: 'none', borderBottom: 'none', borderRadius: '0', color: '#000' }}>
+                        {props.quickShop} <i class="fa fa-eye" aria-hidden="true" style={{ marginLeft: '.3rem' }}></i>
                     </Button>
-                    <Button variant='outline-dark' className='btn-link' href='ecommerce/cart/#' size='sm' style={{ fontWeight: 'bold', textDecoration: 'none', borderRight: 'none', borderTop: 'none', borderBottom: 'none', borderRadius: '0' }}>
-                        {props.cartButton} <i class="fa fa-shopping-cart" aria-hidden="true" style={{ marginLeft: '.7rem' }}></i>
+                    <Button variant='outline-dark' className='btn btn-link roboto-bold' size='sm' style={{ fontWeight: 'bold', textDecoration: 'none', borderRight: 'none', borderTop: 'none', borderBottom: 'none', borderRadius: '0', color: '#000' }}>
+                        {props.cartButton} <i class="fa fa-shopping-cart" aria-hidden="true" style={{ marginLeft: '.3rem' }}></i>
                     </Button>
                 </Card.Text>
             </Card.Body>
@@ -37,11 +37,11 @@ function LatestCardProducts(props) {
 function LatestP() {
 
     return(
-        <Container style={{marginTop: '5rem', marginBottom: '10rem'}}>
+        <Container style={{ marginTop: '5rem', marginBottom: '5rem' }}>
             <Row>
                 {LatestProducts.map((LatestProducts, k) => (
                     <Col key={k} lg={3} md={6} sm={12}>
-                        <LatestCardProducts 
+                        <LatestCardProducts
                             img={LatestProducts.img}
                             img2={LatestProducts.img2}
                             alt={LatestProducts.alt}

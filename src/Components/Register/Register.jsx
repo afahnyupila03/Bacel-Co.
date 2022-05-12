@@ -1,10 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import RegisterInfo from './RegisterInfo';
 
 function Register() {
     return(
-        <h1>
-            Register
-        </h1>
+        <Container>
+            <RegisterInfo />
+        </Container>
     );
 }
 

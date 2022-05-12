@@ -1,23 +1,15 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Navbar, Container, Nav, Form, NavDropdown} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
 function CartUI() {
 
-    // Cart Counter
-    const [count, setCount] = useState(12);
-
-    // Cart Counter Functions
-    function AddCount() {
-        setCount(count + 1);
-    }
-
-    return(
-        <Link to='/cart'>
-            <a class="nav-link" href='ecommerce/feature/cart' style={{ color: 'black' }} >
-                <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
-                <span class=" top-0 start-100 translate-middle badge rounded-pill bg-dark" onChecked={AddCount}>
-                    {count}
+        return(
+            <Link to='/cart'>
+                <a class="nav-link" href='ecommerce/feature/cart' style={{ color: '#E6E6E6' }} >
+                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                <span class=" top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    12
                 </span>
             </a>
         </Link>
@@ -25,59 +17,66 @@ function CartUI() {
 }
 
 function NavBar() {
+
+    // Cart Counter
+    const [count, setCount] = React.useState(0);
+    function addCount() {
+        setCount(count + 1);
+    }
+
     return(
-        <Navbar bg="warning" expand="lg" fixed='top'>
+        <Navbar style={{ backgroundColor: '#2E2E2E'}} expand="lg" fixed='top'>
             <Container >
-                <Navbar.Brand href="#">Basel &amp; Co.</Navbar.Brand>
+                <Navbar.Brand href="#" className='roboto-bold' style={{ color: '#E6E6E6' }} >Basel &amp; Co.</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
-                        className="me-auto my-10 my-lg-10 justify-content-center"
+                        className="me-auto my-10 my-lg-10 justify-content-center roboto-bold"
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
                         <Nav.Link href="#action1">
-                            <Link to='/'>HOME</Link>
+                            <Link to='/' style={{ color: '#E6E6E6', textDecoration: 'none' }}>HOME</Link>
                         </Nav.Link>
                         <Nav.Link href="#action1">
-                            <Link to='/product'>PRODUCTS</Link>
+                            <Link to='/product' style={{ color: '#E6E6E6', textDecoration: 'none' }}>PRODUCTS</Link>
                         </Nav.Link>
                         <Nav.Link href="#action1">
-                            <Link to='/promotion'>PROPMOTION</Link>
+                            <Link to='/promotion' style={{ color: '#E6E6E6', textDecoration: 'none' }}>PROPMOTION</Link>
                         </Nav.Link>
                         <Nav.Link href="#action1">
-                            <Link to='/'>PAGES</Link>
+                            <Link to='/' style={{ color: '#E6E6E6', textDecoration: 'none' }}>PAGES</Link>
                         </Nav.Link>
                         <Nav.Link href="#action1">
-                            <Link to='/blog'>BLOG</Link>
+                            <Link to='/blog' style={{ color: '#E6E6E6', textDecoration: 'none' }}>BLOG</Link>
                         </Nav.Link>
                         <Nav.Link href="#action2">
-                            <Link to='/contact'>CONTACT</Link>
+                            <Link to='/contact' style={{ color: '#E6E6E6', textDecoration: 'none' }}>CONTACT</Link>
                         </Nav.Link>
                     </Nav>
-                    <Form className="d-flex">
-                        <NavDropdown title="Account" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action3" style={{ textAlign: 'center', fontWeight: 'bold' }}>
-                                    <Link to='/login'>
+                    <Form className="d-flex roboto-bold text-danger">
+                        <NavDropdown title={"Account"} id="navbarScrollingDropdown">
+                                <NavDropdown.Item href="#action3" style={{ textAlign: 'center' }}>
+                                <Link to='/login' style={{ color: '#2E2E2E', textDecoration: 'none' }}>
                                         LOGIN
                                     </Link>
                                 </NavDropdown.Item>
-                            <NavDropdown.Item href="#action4" style={{ textAlign: 'center', fontWeight: 'bold' }}>
-                                <Link to='/register'>
+                            <NavDropdown.Item href="#action4" style={{ textAlign: 'center' }}>
+                                <Link to='/register' style={{ color: '#2E2E2E', textDecoration: 'none' }}>
                                     REGISTER
                                 </Link>
                             </NavDropdown.Item>
                         </NavDropdown>
-                            <a class="nav-link" href='ecommerce/whislist' style={{color: 'black'}} >
-                                <i class="fa fa-heart-o fa-lg" aria-hidden="true"></i>
-                                <span class="top-0 start-100 translate-middle badge rounded-pill bg-dark">
+                        <a class="nav-link" href='ecommerce/whislist' style={{ color: '#E6E6E6'}} >
+                                <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                                <span class="top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     0
                                 </span>
                             </a>
                             
                             {/* CartUI */}
                             <div>
-                                <CartUI />
+                                <CartUI /> 
                             </div>
                             
                     </Form>

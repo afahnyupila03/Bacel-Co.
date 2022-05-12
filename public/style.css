@@ -1,0 +1,21 @@
+/* Typography */
+.roboto-bold {
+    font-family: 'Roboto', sans-serif;
+}
+.roboto-condensed {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.inter {
+    font-family: 'Inter', sans-serif;
+}
+.rubik {
+    font-family: 'Rubik', sans-serif;
+}
+.hind {
+    font-family: 'Hind', sans-serif;
+}
+
+/* Colors */
+#navbarScrollingDropdown {
+    color: #E6E6E6;
+}

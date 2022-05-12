@@ -10,7 +10,7 @@ function Featured() {
             <Row>
                 {category.map((category, k) => (
                     <Col key={k} lg={3} md={6} sm={12}>
-                        <Card style={{ marginBottom: '4rem', border: 'none', textAlign: 'center' }}>
+                        <Card className='rubik' style={{ marginBottom: '4rem', border: 'none', textAlign: 'center' }}>
                             <Card.Img variant="top" src={category.img} className='card-img' />
                             <Card.Body>
                                 <Card.Title className='mb-4' >{category.products}</Card.Title>
@@ -24,13 +24,13 @@ function Featured() {
     );
 }
 
-function Featured2(props) {
+function Featured2() {
     return(
         <Container>
             <Row >
                 {category2.map((category2, k) => (
-                    <Col lg={6} md={6} sm={12} >
-                        <Card className='card align-self-center d-flex m-auto' style={{ marginBottom: '4rem', border: 'none', textAlign: 'center' }}>
+                    <Col key={k} lg={6} md={6} sm={12} >
+                        <Card className='card align-self-center d-flex m-auto rubik' style={{ marginBottom: '4rem', border: 'none', textAlign: 'center' }}>
                             <img src={category2.img} alt={category2.alt} className='card-img m-auto align-self-center d-flex' />
                             <Card.Body>
                                 <Card.Title>{category2.products}</Card.Title>

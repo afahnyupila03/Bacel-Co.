@@ -18,12 +18,12 @@ function FeaturedProductCard(props) {
     }
 
     return(
-        <Card style={{ border: 'none', marginBottom: '2rem', textAlign: 'left' }} onMouseOver={mousedOn} onMouseOut={mousedOut} >
+        <Card className='rubik' style={{ border: 'none', marginBottom: '2rem', textAlign: 'left' }} onMouseOver={mousedOn} onMouseOut={mousedOut} >
             {moused ? <Card.Img variant="top" src={props.img2} alt={props.alt} className='card-img' /> : <Card.Img variant="top" src={props.img} alt={props.alt} className='card-img' />}
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Text >
-                    {moused ? <a href='ecommmerce/bacel/#' style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }}><i class="fa fa-shopping-cart fa-1x" aria-hidden="true" style={{ marginRight: '.9rem' }}></i>Select options</a> : <p style={{fontWeight: 'bold'}}>{props.price}</p>}
+                    {moused ? <a href='ecommmerce/bacel/#' style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }} className='text-danger' ><i class="fa fa-shopping-cart fa-1x" aria-hidden="true" style={{ marginRight: '.9rem' }}></i>Select options</a> : <p style={{fontWeight: 'bold'}}>{props.price}</p>}
                 </Card.Text>
             </Card.Body>
         </Card>

@@ -15,16 +15,16 @@ function App() {
   return (
       <div>
         <NavBar />
-          <Routes>
-            <Route path='/' element={<Home />}></Route>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
         <Route exact={true} path='/product' element={<ProductShop />} />
-            <Route exact={true} path='/cart' element={<Cart />} />
-            <Route exact={true} path='/contact' element={<Contact />} />
-            <Route exact={true} path='/login' element={<Login />} />
-            <Route exact={true} path='/register' element={<Register />} />
-            <Route exact={true} path='/promotion' element={<Promotion />} />
-            <Route exact={true} path='/blog' element={<Blog />} />
-          </Routes>
+        <Route exact={true} path='/cart' element={<Cart />} />
+        <Route exact={true} path='/contact' element={<Contact />} />
+        <Route exact={true} path='/login' element={<Login />} />
+        <Route exact={true} path='/register' element={<Register />} />
+        <Route exact={true} path='/promotion' element={<Promotion />} />
+        <Route exact={true} path='/blog' element={<Blog />} />
+      </Routes>
         <Footer />
       </div>
   );

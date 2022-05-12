@@ -5,11 +5,11 @@ import CategoryPromotions from './CategoryPromotions';
 function CategoryCard(props) {
     return(
         <Container>
-            <Card style={{ border: 'none', textAlign: 'center' }}>
+            <Card className='rubik' style={{ border: 'none', textAlign: 'center' }}>
                 <Card.Img variant="top" src={props.img} />
                 <Card.Body>
                     
-                    <Card.Link href="#" style={{textDecoration: 'none'}}>
+                    <Card.Link href="#" style={{ textDecoration: 'none', color: '#2E2E2E'  }}>
                         <Card.Title>{props.title}</Card.Title>
                         EXPLORE NOW <i class="fa fa-angle-right" aria-hidden="true"></i> 
                     </Card.Link>
